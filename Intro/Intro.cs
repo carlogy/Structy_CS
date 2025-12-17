@@ -1,8 +1,9 @@
 using System;
+using System.Collections.Generic;
 
 namespace Structy_CS.Intro;
 
-public static class Intro
+public static partial class Intro
 {
 
     public static double MaxValue(double[] nums)
@@ -48,5 +49,30 @@ public static class Intro
             }
         }
         return true;
+    }
+
+    public static List<object> FizzBuzz(int num)
+    {
+        var list = new List<object>();
+        for (var i = 1; i <= num; i++)
+        {
+            if (i % 3 == 0 && i % 5 == 0)
+            {
+                list.Add("fizzbuzz");
+               
+            } else if (i % 5 == 0)
+            {
+                list.Add("buzz");
+               
+            } else if (i % 3 == 0)
+            {
+                list.Add("fizz");
+            }
+            else
+            {
+                list.Add(i);
+            }
+        }
+        return list;
     }
 }
