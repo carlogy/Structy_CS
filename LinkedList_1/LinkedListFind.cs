@@ -20,7 +20,15 @@ public static partial class LinkedList1
 
     public static bool LinkedListFindRecur<T>(Node<T> head, T target)
     {
-        return false;
+        if (head == null)
+        {
+            return false;
+        }
+        if (object.Equals(head.Value, target))
+        {
+            return true;
+        }
+        return LinkedListFindRecur<T>(head.Next, target);
     }
 }
 
