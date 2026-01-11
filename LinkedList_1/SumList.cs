@@ -27,7 +27,7 @@ public static partial class  LinkedList1
 
 
 
-    private static int SumHelper<T>(Node<T> head, int sum) {
+    private static int SumHelper<T>(Node<T>? head, int sum) {
 
         if (head == null)
         {

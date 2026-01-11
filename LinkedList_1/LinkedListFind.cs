@@ -9,7 +9,7 @@ public static partial class LinkedList1
 
         while (current != null)
         {
-            if (current.Value.ToString() == target.ToString())
+            if (current.Value!.ToString() == target!.ToString())
             {
                 return true;
             }
@@ -18,7 +18,7 @@ public static partial class LinkedList1
         return false;
     }
 
-    public static bool LinkedListFindRecur<T>(Node<T> head, T target)
+    public static bool LinkedListFindRecur<T>(Node<T>? head, T target)
     {
         if (head == null)
         {

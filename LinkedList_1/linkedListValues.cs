@@ -24,7 +24,7 @@ public static partial class LinkedList1
         return results;
     }
 
-    private static List<T> linkedListValuesHelper<T>(Node<T> head, List<T> values)
+    private static List<T> linkedListValuesHelper<T>(Node<T>? head, List<T> values)
     {
         if (head == null)
         {
