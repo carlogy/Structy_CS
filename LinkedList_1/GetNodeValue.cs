@@ -19,5 +19,20 @@ public static partial class LinkedList1
         }
         return default(T);
     }
+
+    public static T? GetNodeValueRecur<T>(Node<T>? head, int index)
+    {
+        if (head == null)
+        {
+            return default(T);
+        }
+
+        if (index == 0)
+        {
+            return head.Value;
+        }
+
+        return GetNodeValueRecur(head.Next, index - 1);
+    }
 }
 
