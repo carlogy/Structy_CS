@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace Structy_CS.Intro;
 
 public static partial class Intro
