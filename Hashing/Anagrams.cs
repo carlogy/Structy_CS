@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Structy_CS.Hashing;
 
 public static partial class Hashing
@@ -24,14 +22,14 @@ public static partial class Hashing
             }
             chars[c]--;
         }
-        
-        foreach (var c in chars) {
+
+        foreach (var c in chars)
+        {
             if (c.Value != 0)
             {
                 return false;
             }
         }
-
         return true;
     }
 }
